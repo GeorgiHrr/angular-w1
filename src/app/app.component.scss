@@ -1,0 +1,21 @@
+.mainBox{
+    display: grid;
+    grid-auto-flow: row;
+    grid-row-gap: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px;
+}
+.infoBox{
+    width: 900px;
+    border: solid black 1px;
+}
+.button{
+    width: 900px;
+    bottom: 10px;
+    border: none;
+    font-size: 36px;
+    text-align: left;
+}
