@@ -31,8 +31,20 @@ export class AppComponent {
 
   public isButtonClicked(show:number){
 
+    this.closeSections(show);
+
     this.buttonTextAndInfoPanel[show].text = !this.buttonTextAndInfoPanel[show].text;
     this.buttonTextAndInfoPanel[show].visibility = !this.buttonTextAndInfoPanel[show].visibility;
+  }
+
+  public closeSections(show:number){
+
+    for (let i = 0; i < this.buttonTextAndInfoPanel.length ; i++) {
+      if(i != show){
+        this.buttonTextAndInfoPanel[i].text = false;
+        this.buttonTextAndInfoPanel[i].visibility = false;
+      }
+    }
 
   }
 
